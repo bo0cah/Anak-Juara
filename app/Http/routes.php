@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pendaftaran');
+});
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/data_keluar', function () {
+    return view('data_keluar');
+});
+Route::get('/penerima', function () {
+    return view('penerima');
 });
