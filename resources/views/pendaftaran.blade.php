@@ -6,8 +6,7 @@
 
 @section('content')
 	<h2>Halaman Pendaftaran</h1>
-
-	<div class="panel panel-primary">
+	<div class="panel panel-warning">
 		<div class="panel-heading">
 			<div class="panel-title">Nama Pengaju</div>
 		</div>

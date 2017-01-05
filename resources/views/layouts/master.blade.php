@@ -6,22 +6,16 @@
     <meta name="SPK Seleksi Anak Juara" content="">
     <meta name="bo0cah" content="">
 	<title>@yield('title')</title>
-		<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
-		<link href="{{asset('css/responsive.css')}}" rel="stylesheet">
-		<link href="{{asset('css/animate.css')}}" rel="stylesheet">
-		<link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
-		<link href="{{asset('css/main.css')}}" rel="stylesheet">
+		<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
+		<link href="{{asset('css/font-awesome.css')}}" rel="stylesheet">
 		@yield('style')
 </head>
 <body>
 	@include('layouts.header')
-	
-	<div class="jumbotron">
-		<div class="container">
+	<div class="container">
 			@yield('content')
-		</div>
 	</div>
-
+	
 	@include('layouts.footer')
 	
 	@yield('script')
