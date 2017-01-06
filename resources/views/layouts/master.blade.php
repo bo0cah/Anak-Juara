@@ -27,8 +27,8 @@
 	<!--Script tambahan-->
 	@yield('script')
 	<!--Script default-->
-  <script src="{{asset('js/bootstrap.min.js')}}"></script>
 	<script src="{{asset('js/jquery.js')}}"></script>
+  <script src="{{asset('js/bootstrap.min.js')}}"></script>
   <script src="{{asset('js/main.js')}}"></script>
   <script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>
   <script src="{{asset('js/price-range.js')}}"></script>

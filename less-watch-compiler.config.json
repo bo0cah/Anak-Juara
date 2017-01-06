@@ -2,6 +2,6 @@
     "allowedExtensions":[".less"],
     "minified": true,
     "sourceMap": false,
-    "watchFolder": "public/less",
+    "watchFolder": "resources/assets/less",
     "outputFolder": "public/css"
 }

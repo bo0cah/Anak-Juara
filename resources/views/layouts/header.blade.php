@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -11,7 +11,7 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-pills navbar-right">
-        <li role="presentation" class="active"><a href="{{url('/')}}"><i class="fa fa-file"></i> Pengajuan</a></li>
+        <li role="presentation" class=""><a href="{{url('/')}}"><i class="fa fa-file"></i> Pengajuan</a></li>
         <li role="presentation" class=""><a href="{{url('data-keluar')}}"><i class="fa fa-print"></i> Data Keluar</a></li>
         <li role="presentation" class=""><a href="{{url('penerima')}}"><i class="fa fa-archive"></i> Penerima</a></li>
 
@@ -23,12 +23,12 @@
           <ul class="dropdown-menu" aria-labelledby="dropDown1">
             <li >
               <a href="#">
-                <i class="fa fa-user"></i> {{Auth::check() ? Auth::user()->name : 'Pengaturan'}}
+                <i class="fa fa-user"></i> {{Auth::check() ? Auth::user()->name : 'Akun'}}
               </a>
             </li>
             <li role="separator" class="divider"></li>
             <li>
-              <a href="{{Auth::check() ? url('auth/logout') : url('auth/login')}}">
+              <a href="{{Auth::check() ? url('logout') : url('login')}}">
                 <i class="fa fa-lock"></i> {{Auth::check() ? 'Logout' : 'Login'}}
               </a>
             </li>
