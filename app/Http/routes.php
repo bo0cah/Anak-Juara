@@ -12,14 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('pendaftaran');
+    return view('pengajuan');
 });
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/data_keluar', function () {
-    return view('data_keluar');
+Route::get('/data-keluar', function () {
+    return view('data-keluar');
 });
 Route::get('/penerima', function () {
     return view('penerima');
+});
+Route::get('/tambah', function () {
+    return view('tambah');
+});
+Route::get('/akun', function () {
+    return view('akun');
 });
