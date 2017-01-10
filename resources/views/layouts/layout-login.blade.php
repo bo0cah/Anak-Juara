@@ -17,7 +17,7 @@
   <body>
 <!--Header-->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+      <div class="container" style="padding-top:10px">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -25,7 +25,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a href="#" class="navbar-brand"><img src="{{asset('../img/logo-rz.png') }}" alt="Logo" height="50px"></a>
+          <a href="#" class="navbar-brand" style="padding-top:0; padding-bottom:10"><img src="{{asset('../img/logo-rz.png') }}" alt="Logo" style="height: 40px"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav nav-pills navbar-right">

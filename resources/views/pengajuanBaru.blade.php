@@ -1,13 +1,11 @@
 @extends('layouts.master')
 
-@section('title')
-	Tambah Pengajuan
-@endsection
+@section('title','Tambah Pengajuan')
 
 @section('content')
 	<h2>Tambah Pengajuan</h2>
 	<form class="form-horizontal">
-<fieldset>
+<fieldset field>
 
 <!-- Form Name -->
 <legend>Nuevo usuario</legend>
@@ -16,7 +14,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="selectbasic">Persona</label>
   <div class="col-md-5">
-    <select id="selectbasic" name="selectbasic" class="form-control">
+    <select id="selectbasic" name="selectbasic" class="form-control input-md">
       <option value="0">(Seleccione una)</option>
     </select>
   </div>
@@ -26,7 +24,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="perfil">Perfil de seguridad</label>
   <div class="col-md-4">
-    <select id="perfil" name="perfil" class="form-control">
+    <select id="perfil" name="perfil" class="form-control input-md">
       <option value="0">(Seleccione uno)</option>
     </select>
   </div>

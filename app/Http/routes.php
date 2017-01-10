@@ -11,24 +11,32 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pengajuan');
-});
+Route::get('/',[
+	'uses' => 'controllerPengajuan@index',
+	'as' => 'pengajuan.index'
+]);
+
+Route::get('/pengajuan-baru',[
+	'uses' => 'controllerPengajuan@pengajuanBaru',
+	'as' => 'pengajuan.baru'
+]);
+
 Route::get('/login', function () {
     return view('pengguna/login');
 });
-Route::get('/data-keluar', function () {
-    return view('data-keluar');
-});
-Route::get('/penerima', function () {
-    return view('penerima');
-});
-Route::get('/tambah', function () {
-    return view('tambah');
-});
+
 Route::get('/akun', function () {
     return view('akun');
 });
+
+Route::get('/data-keluar', function () {
+    return view('data-keluar');
+});
+
+Route::get('/penerima', function () {
+    return view('penerima');
+});
+
 Route::get('/{name?}', function ($name = '1') {
     return $name;
 });

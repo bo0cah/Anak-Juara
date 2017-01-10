@@ -6,7 +6,7 @@ Login
 <link rel="stylesheet" href="">
 @endsection
 @section('content')
-<div class="container" style="width: 300px">
+<div class="container" style="width: 500px">
 	<form>
 		<div class="form-group">
 			<label for="exampleInputEmail1">Email address</label>
@@ -18,7 +18,7 @@ Login
 		</div>
 		<div class="checkbox">
 			<label>
-				<input type="checkbox"> Check me out
+				<input type="checkbox"> Remember me
 			</label>
 		</div>
 		<button type="submit" class="btn btn-warning btn-lg pull-right">Submit</button>
