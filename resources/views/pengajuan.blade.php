@@ -1,7 +1,6 @@
 @extends('layouts.master')
-@section('title')
-Pengajuan
-@endsection
+@section('title','Pengajuan') <!-->pemberian judul halaman-->
+
 @section('content')
 <h2>Halaman Pengajuan</h2>
 <!--New Template-->

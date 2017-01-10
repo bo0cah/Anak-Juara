@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('pengajuan');
 });
 Route::get('/login', function () {
-    return view('login');
+    return view('pengguna/login');
 });
 Route::get('/data-keluar', function () {
     return view('data-keluar');
@@ -28,4 +28,7 @@ Route::get('/tambah', function () {
 });
 Route::get('/akun', function () {
     return view('akun');
+});
+Route::get('/{name?}', function ($name = '1') {
+    return $name;
 });
