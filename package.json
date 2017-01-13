@@ -5,8 +5,28 @@
     "dev": "gulp watch"
   },
   "devDependencies": {
+    "bootstrap-sass": "^3.0.0",
     "gulp": "^3.9.1",
-    "laravel-elixir": "^5.0.0",
-    "bootstrap-sass": "^3.0.0"
-  }
+    "gulp-stylus": "^2.6.0",
+    "laravel-elixir": "^5.0.0"
+  },
+  "name": "anakjuara",
+  "description": "You can use the [editor on GitHub](https://github.com/bo0cah/Anak-Juara/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "I:\\AnakJuara"
+  },
+  "keywords": [
+    "anakjuara"
+  ],
+  "author": "suzilah",
+  "license": "ISC"
 }

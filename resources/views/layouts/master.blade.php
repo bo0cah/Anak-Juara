@@ -12,6 +12,11 @@
 	<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
 	<link href="{{asset('css/font-awesome.css')}}" rel="stylesheet">
 	@yield('style')
+	<style>
+		.container{
+			width: 75%;
+		}
+	</style>
 	<!--Memanggil style tambahan-->
 
 </head>
@@ -24,8 +29,11 @@
 	</div>
 	<!--Memanggil template footer-->
 	@include('layouts.footer')
+
 	<!--Script tambahan-->
-	@yield('script')
+	<script>
+		@yield('script')
+	</script>
 	<!--Script default-->
 	<script src="{{asset('js/jquery.js')}}"></script>
   <script src="{{asset('js/bootstrap.min.js')}}"></script>
