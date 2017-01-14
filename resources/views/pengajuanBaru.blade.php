@@ -36,12 +36,8 @@
         <input id="nama" name="nama" placeholder="Nama Lengkap" class="form-control input-md" required="" type="text">
       </div>
       <label class="col-sm-1 control-label" for="nama">Tanggal</label>
-      <div class="col-sm-1">
-        <input id="nama" name="nama" placeholder="31" class="form-control input-md" required="" type="number">
-      </div><div class="col-sm-1">
-        <input id="nama" name="nama" placeholder="12" class="form-control input-md" required="" type="number">
-      </div><div class="col-sm-2">
-        <input id="nama" name="nama" placeholder="2016" class="form-control input-md" required="" type="number">
+      <div class="col-sm-3">
+        <input id="nama" name="nama" placeholder="mm/dd/yyyy" class="form-control input-md" required="" type="date">
       </div>
     </div>
     
@@ -111,11 +107,11 @@
 
     <div class="form-group"> <!-- nilai anak -->
       <label class="col-sm-3 control-label" for="nama">Kelas/Semester</label> 
-      <div class="col-sm-1">
+      <div class="col-sm-2">
         <input id="nama" name="nama" placeholder="00" class="form-control input-md" required="" type="number">
       </div>
       <label class="col-sm-3 control-label" for="nama">Nilai Rata-Rata/IPK terbaru</label> 
-      <div class="col-sm-1">
+      <div class="col-sm-2">
         <input id="nama" name="nama" placeholder="00,0" class="form-control input-md" required="" type="number">
       </div>
     </div>

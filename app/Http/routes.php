@@ -37,6 +37,10 @@ Route::get('/penerima', function () {
     return view('penerima');
 });
 
-Route::get('/{name?}', function ($name = '1') {
-    return $name;
+Route::get('/doc}', function () {
+    return view('documentation/document');
 });
+
+/*Route::get('/{name?}', function ($name = '1') {
+    return $name;
+});*/

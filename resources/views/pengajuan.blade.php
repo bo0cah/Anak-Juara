@@ -34,9 +34,9 @@
                             <i class="glyphicon glyphicon-phone"></i> 083245674538
                             <i class="glyphicon glyphicon-gift"></i> 18 Agustus 2001
                             <br>
-                            <span class="label label-default">SD</span>
-                            <span class="label label-default">Yatim</span>
-                            <span class="label label-default">Batu Ampar</span>
+                            <span class="label label-info">SD</span>
+                            <span class="label label-success">Yatim</span>
+                            <span class="label label-danger">Batu Ampar</span>
                         </p>
                         <!-- Split button -->
                         <div class="btn-group">
