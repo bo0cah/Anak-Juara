@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+## Welcome to Anak-Juara-Soft v.1.0.0
+Made with love and provided for helping [Rumah Zakat Foundation](www.rumahzakat.org) in selection process for scholarship program as known as Beasiswa Ceria.
 
-You can use the [editor on GitHub](https://github.com/bo0cah/Anak-Juara/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Background
+What does happen in selection process are, they only make some assumption from the data than make the desission for choosing the top candidate to be first. They does not have any method to make desission.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Solution
+They need a desission support system. So, I make this program with some function:
+1. Make rank of candidate
+2. Print the profile
+3. Import and export excel file
+4. Export to pdf
+4. As Database
+5. and others
 
-### Markdown
+## How to Use
+This software is programming by **PHP** with **Laravel 5.2** as framework. Actually, used HTML, CSS, and Javascript.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Some steps to use this program:
+1. Clone this repository from GitHub or download ZIP file.
+```cmd
+$ git clone https://github.com/bo0cah/Anak-Juara.git
 ```
+2. Make sure you had install **Composer** in your computer. Than in repository folder, run this command:
+```
+$ composer install
+```
+wait for a minutes the command is downloading the dependency.
+3. Now, you can run this program from your web server or localhost or run this command:
+```
+$ php artisan serve
+```
+then launch from your web browser use your own address that showed by command above.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bo0cah/Anak-Juara/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Contact me
+For any question, contact me with [Facebook](www.facebook.com\bo0cah) and [Email](bo0c4h@gmail,com) or you can make some comment bellow.
