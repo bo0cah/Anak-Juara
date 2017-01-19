@@ -17,8 +17,8 @@
             </form>
         </div>
     </div><br>
+    
     <!--Rangking dan gambar-->
-
     @for ($baris=0; $baris < 5; $baris++)
       <div class="row">
         @for ($kolom=0; $kolom < 2; $kolom++)

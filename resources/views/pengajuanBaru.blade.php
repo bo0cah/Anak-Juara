@@ -12,7 +12,13 @@
       <label class="col-sm-3 control-label" for="NIK">Nomor Induk Kependudukan</label>
       <div class="col-sm-4">
         <input id="NIK" name="NIK" placeholder="NIK" class="form-control input-md" required="0-9" type="text">
-      </div> 
+      </div>
+      
+      <label class="col-md-1 control-label" for="fotoAnak">Gambar</label>
+      <div class="col-sm-4">
+        <input type="file" id="fotoAnak">
+        <p class="help-block">Dimensi gambar maksimal 600x800 pixel.</p>
+      </div>
     </div>
 
     <div class="form-group">  <!-- Nama lengkap --> 
@@ -20,6 +26,7 @@
       <div class="col-sm-4">
         <input id="nama" name="nama" placeholder="Nama Lengkap" class="form-control input-md" required="" type="text">
       </div>
+      
       <label class="col-sm-1 control-label" for="nama">Kelamin</label>
       <div class="col-sm-2">
         <select id="select" name="select" class="form-control input-md">
@@ -256,32 +263,8 @@
       </div>
     </div>
 
-    <!-- Button -->
-    <div class="form-group">
-      <label class="col-md-3 control-label" for="btn_continuar"></label>
-      <div class="col-md-6">
-        <button id="btn_continuar" name="btn_continuar" class="btn btn-primary">Continuar</button>
-      </div>
-    </div>
-
-    <input type="submit" class="btn" value="My Input Submit" disabled/>
-    <input type="button" class="btn" value="My Input Button" disabled/>
-    <button class="btn" disabled>My Button</button>
-</form>
 @endsection
+
 @section('script')
-  // Disable function
-  jQuery.fn.extend({
-      disable: function(state) {
-          return this.each(function() {
-              this.disabled = state;
-          });
-      }
-  });
 
-  // Disabled with:
-  $('input[type="submit"], input[type="button"], button').disable(true);
-
-  // Enabled with:
-  $('input[type="submit"], input[type="button"], button').disable(false);
 @endsection
