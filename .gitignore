@@ -1,11 +1,6 @@
 /vendor
 /node_modules
-/public/storage
-
+/public/storag
 Homestead.yaml
-
 Homestead.json
-
 .env
-
-README.md

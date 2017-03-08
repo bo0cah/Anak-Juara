@@ -13,7 +13,7 @@
       <div class="col-sm-4">
         <input id="NIK" name="NIK" placeholder="NIK" class="form-control input-md" required="0-9" type="text">
       </div>
-      
+
       <label class="col-md-1 control-label" for="fotoAnak">Gambar</label>
       <div class="col-sm-4">
         <input type="file" id="fotoAnak">
@@ -21,12 +21,12 @@
       </div>
     </div>
 
-    <div class="form-group">  <!-- Nama lengkap --> 
-      <label class="col-sm-3 control-label" for="nama">Nama Lengkap</label> 
+    <div class="form-group">  <!-- Nama lengkap -->
+      <label class="col-sm-3 control-label" for="nama">Nama Lengkap</label>
       <div class="col-sm-4">
         <input id="nama" name="nama" placeholder="Nama Lengkap" class="form-control input-md" required="" type="text">
       </div>
-      
+
       <label class="col-sm-1 control-label" for="nama">Kelamin</label>
       <div class="col-sm-2">
         <select id="select" name="select" class="form-control input-md">
@@ -38,7 +38,7 @@
     </div>
 
     <div class="form-group"><!-- Tempat, tanggal lahir -->
-      <label class="col-sm-3 control-label" for="nama">Tempat Lahir</label> 
+      <label class="col-sm-3 control-label" for="nama">Tempat Lahir</label>
       <div class="col-sm-4">
         <input id="nama" name="nama" placeholder="Nama Lengkap" class="form-control input-md" required="" type="text">
       </div>
@@ -47,13 +47,13 @@
         <input id="nama" name="nama" placeholder="mm/dd/yyyy" class="form-control input-md" required="" type="date">
       </div>
     </div>
-    
+
     <div class="form-group"><!-- Anak ke-.. dari.. -->
-      <label class="col-sm-3 control-label" for="nama">Anak ke-</label> 
+      <label class="col-sm-3 control-label" for="nama">Anak ke-</label>
       <div class="col-sm-1">
         <input id="nama" name="nama" placeholder="2" class="form-control input-md" required="" type="number">
       </div>
-      <label class="col-sm-1 control-label" for="nama">dari</label> 
+      <label class="col-sm-1 control-label" for="nama">dari</label>
       <div class="col-sm-1">
         <input id="nama" name="nama" placeholder="2" class="form-control input-md" required="" type="number">
       </div>
@@ -61,33 +61,33 @@
     </div>
 
     <div class="form-group"> <!-- alamat anak -->
-      <label class="col-sm-3 control-label" for="nama">Alamat Anak</label> 
+      <label class="col-sm-3 control-label" for="nama">Alamat Anak</label>
       <div class="col-sm-4">
         <input id="nama" name="nama" placeholder="Nomor, jalan, blok, gang, nama perumahan" class="form-control input-md" required="" type="text">
       </div>
-      <label class="col-sm-1 control-label" for="nama">RT</label> 
+      <label class="col-sm-1 control-label" for="nama">RT</label>
       <div class="col-sm-1">
         <input id="nama" name="nama" placeholder="00" class="form-control input-md" required="" type="number">
       </div>
-      <label class="col-sm-1 control-label" for="nama">RW</label> 
+      <label class="col-sm-1 control-label" for="nama">RW</label>
       <div class="col-sm-1">
         <input id="nama" name="nama" placeholder="00" class="form-control input-md" required="" type="number">
       </div>
     </div>
 
     <div class="form-group"> <!-- alamat anak -->
-      <label class="col-sm-3 control-label" for="nama">Desa/Kelurahan</label> 
+      <label class="col-sm-3 control-label" for="nama">Desa/Kelurahan</label>
       <div class="col-sm-4">
         <input id="nama" name="nama" placeholder="nama desa/kelurahan" class="form-control input-md" required="" type="text">
       </div>
-      <label class="col-sm-1 control-label" for="nama">Kecamatan</label> 
+      <label class="col-sm-1 control-label" for="nama">Kecamatan</label>
       <div class="col-sm-4">
         <input id="nama" name="nama" placeholder="nama kecamatan" class="form-control input-md" required="" type="text">
       </div>
     </div>
 
     <div class="form-group"> <!-- wilayah pembinaan -->
-      <label class="col-sm-3 control-label" for="nama">Wilayah pembinaan terdekat</label> 
+      <label class="col-sm-3 control-label" for="nama">Wilayah pembinaan terdekat</label>
       <div class="col-sm-4">
         <select id="select" name="select" class="form-control input-md">
             <option value="0">Bengkong</option>
@@ -100,7 +100,7 @@
     <legend>Pendidikan Anak</legend>
 
     <div class="form-group"> <!-- Jenjang pendidikan -->
-      <label class="col-sm-3 control-label" for="nama">Jenjang Pendidikan</label> 
+      <label class="col-sm-3 control-label" for="nama">Jenjang Pendidikan</label>
       <div class="col-sm-4">
         <select id="select" name="select" class="form-control input-md">
           <option value="0">-- pilih --</option>
@@ -113,22 +113,22 @@
     </div>
 
     <div class="form-group"> <!-- nilai anak -->
-      <label class="col-sm-3 control-label" for="nama">Kelas/Semester</label> 
+      <label class="col-sm-3 control-label" for="nama">Kelas/Semester</label>
       <div class="col-sm-2">
         <input id="nama" name="nama" placeholder="00" class="form-control input-md" required="" type="number">
       </div>
-      <label class="col-sm-3 control-label" for="nama">Nilai Rata-Rata/IPK terbaru</label> 
+      <label class="col-sm-3 control-label" for="nama">Nilai Rata-Rata/IPK terbaru</label>
       <div class="col-sm-2">
         <input id="nama" name="nama" placeholder="00,0" class="form-control input-md" required="" type="number">
       </div>
     </div>
 
     <div class="form-group"> <!-- alamat sekolah.kampus -->
-      <label class="col-sm-3 control-label" for="nama">Nama Sekolah/Kampus</label> 
+      <label class="col-sm-3 control-label" for="nama">Nama Sekolah/Kampus</label>
       <div class="col-sm-4">
         <input id="nama" name="nama" placeholder="sekolah/kampus" class="form-control input-md" required="" type="text">
       </div>
-      <label class="col-sm-1 control-label" for="nama">Alamat</label> 
+      <label class="col-sm-1 control-label" for="nama">Alamat</label>
       <div class="col-sm-4">
         <input id="nama" name="nama" placeholder="nomor, nama jalan, kelurahan, kecamatan" class="form-control input-md" required="" type="text">
       </div>
@@ -137,7 +137,7 @@
     <legend>Data Orang Tua/Wali</legend>
 
     <div class="form-group"> <!-- Keberadaan Orang Tua -->
-      <label class="col-sm-3 control-label" for="nama">Keberadaan Orang Tua</label> 
+      <label class="col-sm-3 control-label" for="nama">Keberadaan Orang Tua</label>
       <div class="col-sm-4">
         <select id="select" name="select" class="form-control input-md">
           <option value="0">Lengkap</option>
@@ -149,11 +149,11 @@
     </div>
     <!-- Data Ayah -->
     <div class="form-group"> <!-- nama ayah -->
-      <label class="col-sm-3 control-label" for="nama">Nama Ayah</label> 
+      <label class="col-sm-3 control-label" for="nama">Nama Ayah</label>
       <div class="col-sm-4">
         <input id="nama" name="nama" placeholder="sekolah/kampus" class="form-control input-md" required="" type="text">
       </div>
-      <label class="col-sm-1 control-label" for="nama">Pendidikan</label> 
+      <label class="col-sm-1 control-label" for="nama">Pendidikan</label>
       <div class="col-sm-3 pull-left">
         <select id="select" name="select" class="form-control input-md">
           <option value="0">-- pilih --</option>
@@ -185,11 +185,11 @@
 
     <!-- Data Ibu -->
     <div class="form-group"> <!-- nama Ibu -->
-      <label class="col-sm-3 control-label" for="nama">Nama Ibu</label> 
+      <label class="col-sm-3 control-label" for="nama">Nama Ibu</label>
       <div class="col-sm-4">
         <input id="nama" name="nama" placeholder="sekolah/kampus" class="form-control input-md" required="" type="text">
       </div>
-      <label class="col-sm-1 control-label" for="nama">Pendidikan</label> 
+      <label class="col-sm-1 control-label" for="nama">Pendidikan</label>
       <div class="col-sm-3 pull-left">
         <select id="select" name="select" class="form-control input-md">
           <option value="0">-- pilih --</option>
@@ -221,11 +221,11 @@
 
     <!-- Data Wali -->
     <div class="form-group"> <!-- nama wali -->
-      <label class="col-sm-3 control-label" for="nama">Nama wali</label> 
+      <label class="col-sm-3 control-label" for="nama">Nama wali</label>
       <div class="col-sm-4">
         <input id="nama" name="nama" placeholder="sekolah/kampus" class="form-control input-md" required="" type="text">
       </div>
-      <label class="col-sm-1 control-label" for="nama">Pendidikan</label> 
+      <label class="col-sm-1 control-label" for="nama">Pendidikan</label>
       <div class="col-sm-3 pull-left">
         <select id="select" name="select" class="form-control input-md">
           <option value="0">-- pilih --</option>
@@ -258,7 +258,7 @@
     <!-- Deskripsi -->
     <div class="form-group">
       <label class="col-md-3 control-label" for="deskripsi">Deskripsi Diri dan Lingkungan</label>
-      <div class="col-md-6">                     
+      <div class="col-md-6">
         <textarea class="form-control" id="comentario" name="deskripsi"></textarea>
       </div>
     </div>

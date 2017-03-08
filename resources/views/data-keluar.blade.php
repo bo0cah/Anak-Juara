@@ -16,7 +16,7 @@
                     </span>
                 </div><!-- /input-group -->
                 <a href="{{ url('/pengajuan-baru') }}">
-                    <button class="btn btn-default btn-md" type="button">Pengajuan Baru</button>
+                    <div class="btn btn-primary btn-md" type="button">Pengajuan Baru</div>
                 </a>
             </form>
         </div>
@@ -46,5 +46,5 @@
 			</tr>
 			@endfor
 		</table>
-	
+
 @endsection

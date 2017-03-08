@@ -10,14 +10,14 @@
                     <span class="input-group-btn">
                         <button class="btn btn-default btn-md" type="button"><i class="glyphicon glyphicon-search"></i> Cari</button>
                     </span>
-                </div><!-- /input-group -->
+                  </div><!-- /input-group -->
                 <a href="{{ url('/pengajuan-baru') }}">
-                    <button class="btn btn-default btn-md" type="button">Pengajuan Baru</button>
+                    <div class="btn btn-primary btn-md" type="button">Pengajuan Baru</div>
                 </a>
             </form>
         </div>
     </div><br>
-    
+
     <!--Rangking dan gambar-->
     @for ($baris=0; $baris < 5; $baris++)
       <div class="row">
