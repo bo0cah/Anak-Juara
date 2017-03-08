@@ -30,7 +30,7 @@ wait for a minutes the command is downloading the dependency.
 ```
 $ php artisan serve
 ```
-then launch from your web browser use your own address that showed by command above.
+then launch from your web browser use, use address that showed by command above.
 
 ### Contact me
 For any question, contact me with [Facebook](www.facebook.com\bo0cah) and [Email](bo0c4h@gmail,com) or you can make some comment bellow.
