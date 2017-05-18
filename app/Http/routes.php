@@ -21,7 +21,7 @@ Route::get('/pengajuan-baru',[
 	'as' => 'pengajuan.baru'
 ]);
 
-Route::get('/login', function () {
+Route::get('/login2', function () {
     return view('pengguna/login');
 });
 
@@ -44,3 +44,13 @@ Route::get('/doc}', function () {
 /*Route::get('/{name?}', function ($name = '1') {
     return $name;
 });*/
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('users/{id}', function ($id) {
+    $user =App\User::find($id);
+    echo $user->email."<br>";
+    echo $user->password;
+});

@@ -30,7 +30,7 @@
 				<th>Nama Fundraiser</th>
 				<th>Opsi</th>
 			</tr>
-			@for($baris=0; $baris < 30; $baris++)
+			@for($baris=0; $baris < 20; $baris++)
 			<tr class="warning">
 				<td>{{ $no=$baris+1 }}</td>
 				<td>Abdul</td>
@@ -38,8 +38,7 @@
 				<td>Ahmad</td>
 				<td>
 					<a href="">
-						<kbd >
-							Profil
+						<kbd >Profil
 						</kbd>
 					</a>
 				</td>
