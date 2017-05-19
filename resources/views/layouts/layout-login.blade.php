@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link href="{{asset('css/font-awesome.css')}}" rel="stylesheet">
     @yield('style')
+    <link href="{{ asset('img/pavicon.png') }}" rel='shortcut icon' type="image/png">
     <!--Memanggil style tambahan-->
   </head>
   <body>

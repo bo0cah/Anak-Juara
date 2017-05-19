@@ -22,7 +22,7 @@
 
           <ul class="dropdown-menu" aria-labelledby="dropDown1">
             <li >
-              <a href="#">
+              <a href="{{ url('akun') }}">
                 <i class="fa fa-user"></i> {{Auth::check() ? Auth::user()->name : 'Akun'}}
               </a>
             </li>

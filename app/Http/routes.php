@@ -11,46 +11,46 @@
 |
 */
 
-Route::get('/',[
-	'uses' => 'controllerPengajuan@index',
-	'as' => 'pengajuan.index'
-]);
+Route::group(['middleware' => 'web'], function(){
+    
+    Route::auth();
+    
+    Route::get('/',[
+        'uses' => 'controllerPengajuan@index',
+        'as' => 'pengajuan.index'
+    ]);
 
-Route::get('/pengajuan-baru',[
-	'uses' => 'controllerPengajuan@pengajuanBaru',
-	'as' => 'pengajuan.baru'
-]);
+    Route::get('/pengajuan-baru',[
+        'uses' => 'controllerPengajuan@pengajuanBaru',
+        'as' => 'pengajuan.baru'
+    ]);
 
-Route::get('/login2', function () {
-    return view('pengguna/login');
+    Route::get('/data-keluar','controllerProfilKeluar@index');
+
+    Route::get('/penerima', 'controllerPenerima@index');
+
+    Route::get('/doc}', function () {
+        return view('documentation/document');
+    });
+
+    Route::get('/home', 'HomeController@index');
+
+    Route::get('/administrator', function () {
+        echo '<h1>Hai '.Auth::user()->name;
+    })->middleware('isAdmin');
+    
 });
 
-Route::get('/akun', function () {
-    return view('akun');
-});
 
-Route::get('/data-keluar', function () {
-    return view('data-keluar');
-});
+// Route::get('users/{id}', function ($id) {
+//     $user =App\User::find($id);
+//     echo $user->email."<br>";
+//     echo $user->password;
+// });
 
-Route::get('/penerima', function () {
-    return view('penerima');
-});
-
-Route::get('/doc}', function () {
-    return view('documentation/document');
-});
-
-/*Route::get('/{name?}', function ($name = '1') {
-    return $name;
-});*/
-
-Route::auth();
-
-Route::get('/home', 'HomeController@index');
-
-Route::get('users/{id}', function ($id) {
-    $user =App\User::find($id);
-    echo $user->email."<br>";
-    echo $user->password;
-});
+// Route::get('users2', function () {
+//     $users =App\User::all();
+//     foreach ($users as $user) {
+//         echo $user->email.' nama '.$user->name.' Kata kunci '.$user->password.'<br>';
+//     }
+// });
