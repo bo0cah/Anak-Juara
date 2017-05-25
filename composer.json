@@ -5,10 +5,11 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.5.9",
-        "laravel/framework": "5.2.*",
-        "maatwebsite/excel": "~2.1.0",
-        "barryvdh/laravel-dompdf": "^0.7.0"
+        "php"                                   : ">=5.5.9",
+        "laravel/framework"                     : "5.2.*",
+        "maatwebsite/excel"                     : "~2.1.0",
+        "barryvdh/laravel-dompdf"               : "^0.7.0",
+        "alfredo-ramos/parsedown-extra-laravel" : "~0.6.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

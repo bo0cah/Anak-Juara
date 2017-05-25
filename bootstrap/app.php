@@ -41,6 +41,16 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+// Pemisahan log aplikasi
+$app->configureMonologUsing( function($monolog) use ($app){
+	$bubble = false;
+
+	foreach ($monolog->getLevels() as $name => $level) {
+		$name = strtolower($name);
+		$monolog->pushHandler(new \Monolog\Handler\StreamHandler($app->storagePath() . "/logs/{$name}.log", $level, $bubble));
+	}
+});
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application

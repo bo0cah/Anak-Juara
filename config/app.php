@@ -157,7 +157,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
-
+/*        AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
+*/
     ],
 
     /*
@@ -205,7 +206,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
-
+/*        'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class,
+*/
     ],
 
 ];
