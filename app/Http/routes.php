@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -20,12 +21,23 @@ Route::group(['middleware' => 'web'], function(){
         'as' => 'pengajuan.index'
     ]);
 
-    Route::get('/pengajuan-baru',[
-        'uses' => 'controllerPengajuan@pengajuanBaru',
-        'as' => 'pengajuan.baru'
+    Route::get('pengajuan-form',[
+        'uses' => 'controllerPengajuan@form',
+        'as' => 'pengajuan-form'
     ]);
 
-    Route::get('/data-keluar','controllerProfilKeluar@index');
+    Route::post('pengajuan-form',[
+        'uses' => 'controllerPengajuan@simpan',
+        'as' => 'pengajuan-simpan'
+    ]);
+
+    Route::get('profil/{$id}',[
+        'uses' => 'controllerPengajuan@profil',
+        'as' => 'pengajuan-profil'
+    ]);
+
+
+    Route::get('/profil-keluar','controllerProfilKeluar@index');
 
     Route::get('/penerima', 'controllerPenerima@index');
 

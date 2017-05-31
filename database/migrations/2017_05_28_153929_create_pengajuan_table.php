@@ -14,10 +14,12 @@ class CreatePengajuanTable extends Migration
     {
         Schema::create('pengajuan', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps('created_at');
+            $table->timestamps('created_at')
+            $table->timestamps('updated_at');
             $table->string('NIK')->unique();
             $table->string('nama');
             $table->string('kelamin');
+            $table->string('tempat_lahir');
             $table->date('Tgl_Lahir');
             $table->integer('Anak_Ke');
             $table->integer('Jlh_Sdr');
@@ -42,7 +44,7 @@ class CreatePengajuanTable extends Migration
             $table->boolean('Wali_Serumah',1);
             $table->string('Alamat_Wali');
             $table->string('Deskripsi_Diri');
-            $table->string('url_Photo')->unique();
+            $table->string('Photo')->unique();
         });
     }
 

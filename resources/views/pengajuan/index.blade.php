@@ -11,7 +11,7 @@
                         <button class="btn btn-default btn-md" type="button"><i class="glyphicon glyphicon-search"></i> Cari</button>
                     </span>
                   </div><!-- /input-group -->
-                <a href="{{ url('/pengajuan-baru') }}">
+                <a href="{{ url('pengajuan-form') }}">
                     <div class="btn btn-primary btn-md" type="button">Pengajuan Baru</div>
                 </a>
             </form>
