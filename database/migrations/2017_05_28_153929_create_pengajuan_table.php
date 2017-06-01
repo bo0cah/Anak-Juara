@@ -14,8 +14,7 @@ class CreatePengajuanTable extends Migration
     {
         Schema::create('pengajuan', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps('created_at')
-            $table->timestamps('updated_at');
+            $table->timestamps('created_at');
             $table->string('NIK')->unique();
             $table->string('nama');
             $table->string('kelamin');
