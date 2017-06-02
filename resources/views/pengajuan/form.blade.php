@@ -167,8 +167,8 @@
     <div class="form-group"> <!-- serumah dengan anak -->
       <div class="col-md-4 col-sm-offset-3">
         <div class="checkbox">
-          <label for="alamat_ayah_cek">
-            <input name="alamat_ayah_cek" id="alamat_ayah_cek" value="1" type="checkbox">
+          <label for="Ayah_Serumah">
+            <input name="Ayah_Serumah" id="Ayah_Serumah" value="1" type="checkbox">
             Serumah dengan anak
           </label>
         </div>
@@ -203,8 +203,8 @@
     <div class="form-group"> <!-- serumah dengan anak -->
       <div class="col-md-4 col-sm-offset-3">
         <div class="checkbox">
-          <label for="alamat_ibu_cek">
-            <input name="alamat_ibu_cek" id="alamat_ibu_cek" value="1" type="checkbox">
+          <label for="Ibu_Serumah">
+            <input name="Ibu_Serumah" id="Ibu_Serumah" value="1" type="checkbox">
             Serumah dengan anak
           </label>
         </div>
@@ -212,9 +212,9 @@
     </div>
 
     <div class="form-group"> <!-- alamat ibu -->
-      <label class="col-md-3 control-label" for="alamat_ibu">Alamat Ayah</label>
+      <label class="col-md-3 control-label" for="Alamat_Ibu">Alamat Ibu</label>
       <div class="col-sm-8">
-        <input id="nama" name="nama" placeholder="nomor, nama jalan, kelurahan, kecamatan" class="form-control input-md" required="" type="text">
+        <input id="Alamat_Ibu" name="Alamat_Ibu" placeholder="nomor, nama jalan, kelurahan, kecamatan" class="form-control input-md" required="" type="text">
       </div>
     </div>
 
@@ -239,8 +239,8 @@
     <div class="form-group"> <!-- serumah dengan anak -->
       <div class="col-md-4 col-sm-offset-3">
         <div class="checkbox">
-          <label for="alamat_wali_cek">
-            <input name="alamat_wali_cek" id="alamat_wali_cek" value="1" type="checkbox">
+          <label for="Wali_Serumah">
+            <input name="Wali_Serumah" id="Wali_Serumah" value="1" type="checkbox">
             Serumah dengan anak
           </label>
         </div>
@@ -248,9 +248,9 @@
     </div>
 
     <div class="form-group"> <!-- alamat wali -->
-      <label class="col-md-3 control-label" for="alamat_wali">Alamat wali</label>
+      <label class="col-md-3 control-label" for="Alamat_Wali">Alamat wali</label>
       <div class="col-sm-8">
-        <input id="Alamat_Anak" name="Alamat_Anak" placeholder="nomor, nama jalan, kelurahan, kecamatan" class="form-control input-md" required="" type="text">
+        <input id="Alamat_Wali" name="Alamat_Wali" placeholder="nomor, nama jalan, kelurahan, kecamatan" class="form-control input-md" required="" type="text">
       </div>
     </div>
 
