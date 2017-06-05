@@ -18,5 +18,40 @@ class Pengajuan extends Model
     //pemformatan pada tanggal
     //protected $dateFormat = 'U';
 
+    //data yg boleh diisi
+    protected $fillable = [
+    	'NIK',
+		'nama',
+		'kelamin',
+		'tempat_lahir',
+		'Tgl_Lahir',
+		'Anak_Ke',
+		'Jlh_Sdr',
+		'Alamat_Anak',
+		'RT_Anak',
+		'RW_Anak',
+		'Desa_Anak',
+		'Kec_Anak',
+		'Deskripsi_Diri',
+		'HP_Telp',
+		'Photo',
+		'Wilayah_Pembinaan',
+		'Jenjang_Pendidikan',
+		'Kelas_Smt',
+		'Nilai_IPK',
+		'Nama_Sklh_Kampus',
+		'Alamat_Sekolah',
+		'Keberadaan_Ortu',
+		'Nama_Ayah',
+		'Pend_Ayah',
+		'Alamat_Ayah',
+		'Nama_Ibu',
+		'Pend_Ibu',
+		'Alamat_Ibu',
+		'Nama_Wali',
+		'Pend_Wali',
+		'Alamat_Wali'
+    ];
+
     
 }

@@ -23,29 +23,33 @@ class CreatePengajuanTable extends Migration
             $table->integer('Anak_Ke');
             $table->integer('Jlh_Sdr');
             $table->string('Alamat_Anak');
+            $table->string('RT_Anak');
+            $table->string('RW_Anak');
+            $table->string('Desa_Anak');
+            $table->string('Kec_Anak');
+            $table->string('Deskripsi_Diri');
+            $table->string('HP_Telp');
+            $table->string('Photo')->nullable();
 
             $table->string('Wilayah_Pembinaan');
             $table->string('Jenjang_Pendidikan');
             $table->string('Kelas_Smt');
-            $table->string('Nilai_IPK');
+            $table->decimal('Nilai_IPK', 2, 2);
             $table->string('Nama_Sklh_Kampus');
             $table->string('Alamat_Sekolah');
 
             $table->string('Keberadaan_Ortu');
-            $table->string('Nama_Ayah');
-            $table->string('Pend_Ayah');
-            $table->string('Alamat_Ayah');
+            $table->string('Nama_Ayah')->nullable();
+            $table->string('Pend_Ayah')->nullable();
+            $table->string('Alamat_Ayah')->nullable();
 
-            $table->string('Nama_Ibu');
-            $table->string('Pend_Ibu');
-            $table->string('Alamat_Ibu');
-
-            $table->string('Nama_Wali');
-            $table->string('Pend_Wali');
-            $table->string('Alamat_Wali');
-
-            $table->string('Deskripsi_Diri');
-            $table->string('Photo')->nullable();
+            $table->string('Nama_Ibu')->nullable();
+            $table->string('Pend_Ibu')->nullable();
+            $table->string('Alamat_Ibu')->nullable();
+            
+            $table->string('Nama_Wali')->nullable();
+            $table->string('Pend_Wali')->nullable();
+            $table->string('Alamat_Wali')->nullable();
         });
     }
 
