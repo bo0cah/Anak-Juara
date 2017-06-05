@@ -17,19 +17,21 @@
 
         <!--Dropdown Menu-->
         <li class="dropdown" >
-          <a href="" class="dropdown-toggle" id="dropDown1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pengguna <span class="caret"></span>
+          <a href="" class="dropdown-toggle" id="dropDown1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user"> </i>
+            {{Auth::check() ? Auth::user()->name : 'Akun'}} <span class="caret"></span>
           </a>
 
           <ul class="dropdown-menu" aria-labelledby="dropDown1">
             <li >
               <a href="{{ url('akun') }}">
-                <i class="fa fa-user"></i> {{Auth::check() ? Auth::user()->name : 'Akun'}}
+                Profil
               </a>
             </li>
             <li role="separator" class="divider"></li>
             <li>
               <a href="{{Auth::check() ? url('logout') : url('login')}}">
-                <i class="fa fa-lock"></i> {{Auth::check() ? 'Logout' : 'Login'}}
+                {{Auth::check() ? 'Logout' : 'Login'}}
               </a>
             </li>
           </ul>

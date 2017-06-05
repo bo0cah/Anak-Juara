@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title','Pengajuan') <!--pemberian judul halaman-->
+@section('title','Daftar Pengajuan') <!--pemberian judul halaman-->
 @section('content')
 <h2>Pengajuan</h2>
     <div class="row">

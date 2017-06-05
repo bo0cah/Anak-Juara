@@ -4,8 +4,8 @@
 
 @section('content')
 	<h2>Tambah Pengajuan</h2>
-	<form class="form-horizontal" role="form" method="POST" action="pengajuan-form">
-    {{ csrf_field() }}
+	<form class="form-horizontal" role="form" method="POST" action="pengajuan-form" enctype="multipart/form-data">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
     <legend>Biodata Anak</legend><!-- Form name -->
 
@@ -17,8 +17,8 @@
 
       <label class="col-md-2 control-label" for="Photo">Photo Anak</label>
       <div class="col-sm-3">
-        <input type="file" id="Photo">
-        <p class="help-block">Dimensi maksimal 600x800 pixel.</p>
+        <input type="file" id="Photo" name="Photo" placeholder="Pilih Gambar">
+        {{-- <p class="help-block">Dimensi maksimal 600x800 pixel.</p> --}}
       </div>
     </div>
 
@@ -176,7 +176,7 @@
       <div class="col-md-4 col-sm-offset-3">
         <div class="checkbox">
           <label for="Ayah_Serumah">
-            <input name="Ayah_Serumah" id="Ayah_Serumah" value="Ayah_Serumah" type="checkbox">
+            <input name="Ayah_Serumah" id="Ayah_Serumah" value="1" type="checkbox">
             Serumah dengan anak
           </label>
         </div>
@@ -213,7 +213,7 @@
       <div class="col-md-4 col-sm-offset-3">
         <div class="checkbox">
           <label for="Ibu_Serumah">
-            <input name="Ibu_Serumah" id="Ibu_Serumah" value="Ibu_Serumah" type="checkbox">
+            <input name="Ibu_Serumah" id="Ibu_Serumah" value="1" type="checkbox">
             Serumah dengan anak
           </label>
         </div>
@@ -250,7 +250,7 @@
       <div class="col-md-4 col-sm-offset-3">
         <div class="checkbox">
           <label for="Wali_Serumah">
-            <input name="Wali_Serumah" id="Wali_Serumah" value="Wali_Serumah" type="checkbox">
+            <input name="Wali_Serumah" id="Wali_Serumah" value="1" type="checkbox">
             Serumah dengan anak
           </label>
         </div>
