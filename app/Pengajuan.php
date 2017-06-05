@@ -16,7 +16,7 @@ class Pengajuan extends Model
     public $incrementing = false;
 
     //pemformatan pada tanggal
-    //protected $dateFormat = 'U';
+    protected $dateFormat = 'd-m-Y H:i:s';
 
     //data yg boleh diisi
     protected $fillable = [
@@ -50,7 +50,9 @@ class Pengajuan extends Model
 		'Alamat_Ibu',
 		'Nama_Wali',
 		'Pend_Wali',
-		'Alamat_Wali'
+		'Alamat_Wali',
+		'penghasilan',
+		'stts_tinggal'
     ];
 
     

@@ -60,7 +60,7 @@ class controllerPengajuan extends Controller
         //upload photo
         $photo = $request->file('Photo')->getClientOriginalName();
 
-        $destination = base_path() . '/public//';
+        $destination = base_path() . '/public/photo/';
 
         $request->file('Photo')->move($destination, $photo);
 
@@ -68,9 +68,10 @@ class controllerPengajuan extends Controller
 
         Pengajuan::create($data);
 
-        return "sukses tersimpan.";
+        $getId = Pengajuan::create($data);
+        $id = $getId->id;
 
-        // return view('pengajuan.tambah');
+        return Response::json( array('success' => true), 200);
     }
 
 }

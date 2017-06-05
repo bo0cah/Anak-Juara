@@ -17,7 +17,7 @@
 
       <label class="col-md-2 control-label" for="Photo">Photo Anak</label>
       <div class="col-sm-3">
-        <input type="file" id="Photo" name="Photo" placeholder="Pilih Gambar">
+        <input type="file" id="Photo" name="Photo">
         {{-- <p class="help-block">Dimensi maksimal 600x800 pixel.</p> --}}
       </div>
     </div>
@@ -151,7 +151,7 @@
           <option value="Yatim Piatu">Yatim Piatu</option>
         </select>
       </div>
-    </div> 
+    </div>
 
     <!-- Data Ayah -->
     <legend>Data Ayah</legend>
@@ -234,6 +234,7 @@
       <div class="col-sm-4">
         <input id="Nama_Wali" name="Nama_Wali" placeholder="Nama Lengkap Wali" class="form-control input-md" type="text">
       </div>
+      
       <label class="col-sm-1 control-label" for="Pend_Wali">Pendidikan</label>
       <div class="col-sm-3 pull-left">
         <select id="Pend_Wali" name="Pend_Wali" class="form-control input-md">
@@ -264,12 +265,34 @@
       </div>
     </div>
 
-    <legend>Kontak yang bisa dihubungi</legend>
-    <div class="form-group"> <!-- HP/telp -->
-      <label class="col-md-3 control-label" for="HP_Telp">Nomor HP/Telp</label>
-      <div class="col-sm-8">
-        <input id="HP_Telp" name="HP_Telp" placeholder="08xxxxxxxxxx" required="" type="text">
+    <legend>Data Pendukung Lainnya</legend>
+
+    <div class="form-group">
+
+      <!-- Penghasilan -->
+      <label class="col-md-3 control-label" for="penghasilan">Penghasilan Orang Tua/Wali</label>
+      <div class="col-sm-2">
+        <input id="penghasilan" name="penghasilan" placeholder="Rp." class="form-control input-md" required="[0-9]+" type="number">
       </div>
+
+      <!-- Status Tempat Tinggal -->
+      <label class="col-md-3 control-label" for="stts_tinggal">Status Tempat Tinggal</label>
+      <div class="col-sm-3">
+        <select id="stts_tinggal" name="stts_tinggal" class="form-control input-md" required="">
+          <option value="Menumpang">Menumpang</option>
+          <option value="Sewa">Sewa</option>
+          <option value="Hak milik">Hak milik</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="form-group">
+
+      <label class="col-md-3 control-label" for="HP_Telp">Nomor HP/Telp</label>
+      <div class="col-sm-3">
+        <input id="HP_Telp" name="HP_Telp" placeholder="08xxxxxxxxxx" class="form-control input-md" required="" type="text">
+      </div>
+
     </div>
 
     <!-- tombol simpan -->
