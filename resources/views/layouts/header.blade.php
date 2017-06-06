@@ -7,7 +7,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="#" class="navbar-brand" style="padding-top:0px; margin-top: 0px"><img src="{{asset('img/logo-rumah-zakat.png') }}" alt="Logo" style="height: 40px"></a>
+        <a href="#" class="navbar-brand" style="padding-top:0px; margin-top: 0px"><img src="{{asset('../img/logo-rumah-zakat.png') }}" alt="Logo" style="height: 40px"></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-pills navbar-right">

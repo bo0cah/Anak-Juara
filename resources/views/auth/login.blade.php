@@ -1,4 +1,5 @@
 @extends('layouts.layout-login')
+@section('title','Halaman Login')
 @section('content')
 <div class="container" style="width: 500px">
    <div class="row">

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link href="{{ asset('css/font-awesome.css')}}" rel="stylesheet">
     @yield('style')
-    <link href="{{ asset('img/pavicon.png') }}" rel='shortcut icon' type="image/png">
+    <link href="{{ asset('../pavicon.png') }}" rel='shortcut icon' type="image/png">
     <!--Memanggil style tambahan-->
   </head>
   <body>
@@ -26,7 +26,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a href="#" class="navbar-brand" style="padding-top:0; padding-bottom:10"><img src="{{asset('../img/logo-rz.png') }}" alt="Logo" style="height: 40px"></a>
+          <a href="#" class="navbar-brand" style="padding-top:0; padding-bottom:10"><img src="{{asset('../img/logo-rumah-zakat.png') }}" alt="Logo" style="height: 40px"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav nav-pills navbar-right">
