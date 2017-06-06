@@ -1,14 +1,13 @@
 <?php
 
-return [
-
-    
     $url = parse_url(getenv("DATABASE_URL"));
 
     $host = $url["host"];
     $username = $url["user"];
     $password = $url["pass"];
     $database = substr($url["path"], 1);
+
+return [
 
 
         /*
@@ -59,7 +58,7 @@ return [
             'driver' => 'sqlite',
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
-        ],s
+        ],
 
         'mysql' => [
             'driver' => 'mysql',
