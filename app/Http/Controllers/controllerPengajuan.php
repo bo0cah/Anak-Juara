@@ -25,9 +25,9 @@ class controllerPengajuan extends Controller
     public function profil($id){
         
         //mencari data pengaju di database berdasarkan id
-        $pangaju = Pengajuan::find($id);
+        $pengaju = Pengajuan::all();
 
-        echo $pengaju->input('nama');
+        return $pengaju->nama;
         // return view('pengajuan.profil');
     }
 
@@ -68,10 +68,12 @@ class controllerPengajuan extends Controller
 
         Pengajuan::create($data);
 
+        //mengambil id yg baru saja di insert
         $getId = Pengajuan::create($data);
         $id = $getId->id;
 
-        return Response::json( array('success' => true), 200);
+        // return Response::json( array('success' => true), 200);
+        return "data sukses disimpan dengan id:".$id;   
     }
 
 }

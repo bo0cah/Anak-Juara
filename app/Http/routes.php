@@ -16,32 +16,19 @@ Route::group(['middleware' => 'web'], function(){
     
     Route::auth();
     
-    Route::get('/',[
-        'uses' => 'controllerPengajuan@index',
-        'as' => 'pengajuan.index'
-    ]);
+    Route::get('/',['uses' => 'controllerPengajuan@index','as' => 'pengajuan.index' ]);
 
-    Route::get('pengajuan-form',[
-        'uses' => 'controllerPengajuan@form',
-        'as' => 'pengajuan-form'
-    ]);
+    Route::get('pengajuan-form',['uses' => 'controllerPengajuan@form', 'as' => 'pengajuan-form' ]);
 
-    Route::post('pengajuan-form',[
-        'uses' => 'controllerPengajuan@simpan',
-        'as' => 'pengajuan-simpan'
-    ]);
+    Route::post('pengajuan-form',['uses' => 'controllerPengajuan@simpan','as' => 'pengajuan-simpan']);
 
-    Route::get('profil/{$id}',[
-        'uses' => 'controllerPengajuan@profil',
-        'as' => 'pengajuan-profil'
-    ]);
+    Route::get('profil/{id}',[ 'uses' => 'controllerPengajuan@profil', 'as' => 'profil']);
 
+    Route::get('profil-keluar','controllerProfilKeluar@index');
 
-    Route::get('/profil-keluar','controllerProfilKeluar@index');
+    Route::get('penerima', 'controllerPenerima@index');
 
-    Route::get('/penerima', 'controllerPenerima@index');
-
-    Route::get('/doc}', function () {
+    Route::get('doc}', function () {
         return view('documentation/document');
     });
 

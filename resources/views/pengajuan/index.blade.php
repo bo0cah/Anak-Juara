@@ -19,39 +19,42 @@
     </div><br>
 
     <!--Rangking dan gambar-->
-    @for ($baris=0; $baris < 5; $baris++)
-      <div class="row">
-        @for ($kolom=0; $kolom < 2; $kolom++)
-          <div class="col-xs-12 col-sm-6 col-md-6">
-            <div class="well well-sm">
-              <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <img src="{{ asset('img/img-ex-354x472.png') }}" alt="" class="img-rounded img-responsive"/>
-                </div>
-                <div class="col-sm-6 col-md-8">
-                  <h4>Abdul Aziz Zulfikar Jafar</h4>
-                  <small>
-                    <cite title="">Jl.Kuda Laut Bukit Senyum  RT/RW : 004/007 Kel. Sei Jodoh  Kec. Batu Ampar <i class="glyphicon glyphicon-map-marker"></i></cite>
-                  </small>
-                  <p>
-                    <i class="glyphicon glyphicon-phone"></i> 083245674538
-                    <i class="glyphicon glyphicon-gift"></i> 18 Agustus 2001
-                    <br>
-                    <span class="label label-info">SD</span>
-                    <span class="label label-success">Yatim</span>
-                    <span class="label label-danger">Batu Ampar</span>
-                  </p>
-                  <!-- Split button -->
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-primary">Lihat Profil</button>
-                    <button type="button" class="btn btn-primary">Cetak</button>
-                  </div>
-                </div>
+    @foreach ($pengajuan as $pengaju)
+      {{-- expr --}}
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <div class="well well-sm">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <img src="{{ asset('../photos/'.$pengaju->Photo) }}" alt="" class="img-rounded img-responsive"/>
+            </div>
+            <div class="col-sm-6 col-md-8">
+              <h4>{{ $pengaju->nama }}</h4>
+              <small>
+                <cite title="">
+                <i class="glyphicon glyphicon-map-marker"></i>
+                {{ $pengaju->Alamat_Anak }}  RT/RW : 0{{ $pengaju->RT_Anak }}/0{{ $pengaju->RW_Anak }} Kel. {{ $pengaju->Desa_Anak }}  Kec. {{ $pengaju->Kec_Anak }} </cite>
+              </small>
+              <p>
+                <i class="glyphicon glyphicon-phone"></i> {{ $pengaju->HP_Telp }}
+                <i class="glyphicon glyphicon-gift"></i> {{ $pengaju->Tgl_Lahir }}
+                <br>
+                <span class="label label-info">{{ $pengaju->Jenjang_Pendidikan }}</span>
+                <span class="label label-success">{{ $pengaju->Keberadaan_Ortu }}</span>
+                <span class="label label-danger">{{ $pengaju->Wilayah_Pembinaan }}</span>
+              </p>
+              <!-- Split button -->
+              <div class="btn-group">
+                <a href="{{ action('controllerPengajuan@profil', $pengaju->id)}}">
+                  <button type="button" class="btn btn-primary btn-sm">Lihat Profil</button>
+                </a>
+                <a href="{{ url('profil/cetak')}}">
+                  <button type="button" class="btn btn-primary btn-sm">Cetak</button>
+                </a>
               </div>
             </div>
           </div>
-        @endfor
+        </div>
       </div>
-    @endfor
+    @endforeach
 
 @endsection
