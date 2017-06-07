@@ -6,6 +6,8 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use App\Pengajuan as Pengajuan;
+use Illuminate\Http\Response;
+use Carbon\Carbon;
 
 class controllerPengajuan extends Controller
 {   
@@ -25,7 +27,7 @@ class controllerPengajuan extends Controller
     public function profil($id){
         
         //mencari data pengaju di database berdasarkan id
-        $pengaju = Pengajuan::all();
+        $pengaju = Pengajuan::find($id);
 
         return $pengaju->nama;
         // return view('pengajuan.profil');
@@ -67,13 +69,7 @@ class controllerPengajuan extends Controller
         $data['Photo'] = $photo;
 
         Pengajuan::create($data);
-
-        //mengambil id yg baru saja di insert
-        $getId = Pengajuan::create($data);
-        $id = $getId->id;
-
-        // return Response::json( array('success' => true), 200);
-        return "data sukses disimpan dengan id:".$id;   
+        return "data sukses disimpan";
     }
 
 }

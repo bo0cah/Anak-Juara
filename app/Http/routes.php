@@ -37,19 +37,15 @@ Route::group(['middleware' => 'web'], function(){
     Route::get('/administrator', function () {
         echo '<h1>Hai '.Auth::user()->name;
     })->middleware('isAdmin');
+
+    //testing route
+    Route::get('importExport', 'MaatwebsiteDemoController@importExport');
+    Route::get('downloadExcel/{type}', 'MaatwebsiteDemoController@downloadExcel');
+    Route::post('importExcel', 'MaatwebsiteDemoController@importExcel');
     
 });
 
-
-// Route::get('users/{id}', function ($id) {
-//     $user =App\User::find($id);
-//     echo $user->email."<br>";
-//     echo $user->password;
-// });
-
-// Route::get('users2', function () {
-//     $users =App\User::all();
-//     foreach ($users as $user) {
-//         echo $user->email.' nama '.$user->name.' Kata kunci '.$user->password.'<br>';
-//     }
-// });
+Route::get('users/{id}', function ($id) {
+    $user = App\Pengajuan::find("$id"); 
+    echo $user->nama."<br>";
+});

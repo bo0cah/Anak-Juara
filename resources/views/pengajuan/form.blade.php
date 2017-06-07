@@ -141,6 +141,8 @@
       </div>
     </div>
 
+    <br>
+
     <div class="form-group"> <!-- Keberadaan Orang Tua -->
       <label class="col-sm-3 control-label" for="Keberadaan_Ortu">Keberadaan Orang Tua</label>
       <div class="col-sm-4">
@@ -301,10 +303,11 @@
           <i class="fa fa-btn fa-sign-in"></i> Simpan
        </button>
     </div>
+
 </form>
 
-@endsection
+@endsection 
 
 @section('script')
-
+   {{-- tambah scrip sesuai kebutuhan --}}
 @endsection

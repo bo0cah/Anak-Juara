@@ -10,13 +10,13 @@ class Pengajuan extends Model
     protected $table = 'Pengajuan';
 
     //definisikan primaryKey utk tabel
-    protected $primaryKey = 'NIK';
+    //protected $primaryKey = 'NIK';
 
     //to use a non-incrementing or a non-numeric primary key set to false
-    public $incrementing = false;
+    //public $incrementing = false;
 
     //pemformatan pada tanggal
-    protected $dateFormat = 'd-m-Y H:i:s';
+    //protected $dateFormat = 'd-m-Y H:i:s'; jika diaktifkan tgl jadi tidak otomatis di basis data
 
     //data yg boleh diisi
     protected $fillable = [
@@ -54,6 +54,5 @@ class Pengajuan extends Model
 		'penghasilan',
 		'stts_tinggal'
     ];
-
     
 }

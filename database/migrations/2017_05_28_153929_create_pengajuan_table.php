@@ -43,7 +43,7 @@ class CreatePengajuanTable extends Migration
             $table->string('Alamat_Ayah')->nullable();
 
             $table->string('Nama_Ibu')->nullable();
-            $table->stringg('Pend_Ibu')->nullable();
+            $table->string('Pend_Ibu')->nullable();
             $table->string('Alamat_Ibu')->nullable();
             
             $table->string('Nama_Wali')->nullable();

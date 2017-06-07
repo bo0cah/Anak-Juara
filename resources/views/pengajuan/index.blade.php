@@ -25,7 +25,7 @@
         <div class="well well-sm">
           <div class="row">
             <div class="col-sm-6 col-md-4">
-              <img src="{{ asset('../photos/'.$pengaju->Photo) }}" alt="" class="img-rounded img-responsive"/>
+              <img src="{{ asset('../photo/'.$pengaju->Photo) }}" alt="" class="img-rounded img-responsive"/>
             </div>
             <div class="col-sm-6 col-md-8">
               <h4>{{ $pengaju->nama }}</h4>
@@ -56,5 +56,16 @@
         </div>
       </div>
     @endforeach
+@endsection
 
+@section('sidenav')
+  @foreach ($pengajuan as $pengaju)
+  
+    <div id="affix-nav" class="hidden-print hidden-xs hidden-sm affix">
+        <ul class="nav sidenav affix" data-spy="affix" data-offset-top="10">
+          <li><a href="#{{ $pengaju->nama }}">{{ $pengaju->nama }}</a></li>
+        </ul>
+    </div>
+
+  @endforeach
 @endsection
