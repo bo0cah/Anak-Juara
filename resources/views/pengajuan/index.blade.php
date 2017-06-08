@@ -11,8 +11,11 @@
                         <button class="btn btn-default btn-md" type="button"><i class="glyphicon glyphicon-search"></i> Cari</button>
                     </span>
                   </div><!-- /input-group -->
-                <a href="{{ url('pengajuan-form') }}">
+                <a href="{{ URL::to('pengajuan-form') }}">
                     <div class="btn btn-primary btn-md" type="button">Pengajuan Baru</div>
+                </a>
+                <a href="{{ URL::to('unduhExcel/pdf') }}">
+                    <div class="btn btn-primary btn-md" type="button">Unduh Excel</div>
                 </a>
             </form>
         </div>
@@ -47,7 +50,7 @@
                 <a href="{{ action('controllerPengajuan@profil', $pengaju->id)}}">
                   <button type="button" class="btn btn-primary btn-sm">Lihat Profil</button>
                 </a>
-                <a href="{{ url('profil/cetak')}}">
+                <a href="{{ URL::to('profil/cetak')}}">
                   <button type="button" class="btn btn-primary btn-sm">Cetak</button>
                 </a>
               </div>
@@ -60,9 +63,9 @@
 
 @section('sidenav')
   @foreach ($pengajuan as $pengaju)
-  
+
     <div id="affix-nav" class="hidden-print hidden-xs hidden-sm affix">
-        <ul class="nav sidenav affix" data-spy="affix" data-offset-top="10">
+        <ul class="nav sidenav affix" data-spy="affix" data-offset-top="5">
           <li><a href="#{{ $pengaju->nama }}">{{ $pengaju->nama }}</a></li>
         </ul>
     </div>

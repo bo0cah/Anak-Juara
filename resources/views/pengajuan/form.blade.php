@@ -4,6 +4,22 @@
 
 @section('content')
 	<h2>Tambah Pengajuan</h2>
+  <form action="{{ URL::to('unggahExcel') }}" class="form-horizontal" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+      <div class="form-group">
+         <label class="col-sm-4 control-label" for="NIK">Unggah file Extensi: csv, xls atau xlsx</label>
+         <div class="col-sm-3">
+            <input type="file" name="import_file" />
+         </div>
+         
+         <div class="col-sm-3">
+            <button class="btn btn-primary btn-sm">Unggah Excel</button>
+         </div>
+    </div>
+  
+  </form>
+
 	<form class="form-horizontal" role="form" method="POST" action="pengajuan-form" enctype="multipart/form-data">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 

@@ -58,7 +58,7 @@ return array(
     ],
 
     'properties' => [
-        'creator'        => 'Maatwebsite',
+        'creator'        => 'Suzilah',
         'lastModifiedBy' => 'Maatwebsite',
         'title'          => 'Spreadsheet',
         'description'    => 'Default spreadsheet export',
@@ -106,7 +106,7 @@ return array(
     |
     */
 
-    'creator'    => 'Maatwebsite',
+    'creator'    => 'Suzilah',
 
     'csv'        => [
         /*

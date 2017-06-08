@@ -6,7 +6,7 @@ use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
 use App\Item;
 use DB;
-use Excel;
+use Maatwebsite\Excel\Facades\Excel;
 class MaatwebsiteDemoController extends Controller
 	{
 		public function importExport()
@@ -30,8 +30,7 @@ class MaatwebsiteDemoController extends Controller
 		{
 			if(Input::hasFile('import_file')){
 				$path = Input::file('import_file')->getRealPath();
-				$data = Excel::load($path, function($reader) {
-				})->get();
+				$data = Excel::load($path, function($reader){})->get();
 				if(!empty($data) && $data->count()){
 					foreach ($data as $key => $value) {
 						$insert[] = ['title' => $value->title, 'description' => $value->description];

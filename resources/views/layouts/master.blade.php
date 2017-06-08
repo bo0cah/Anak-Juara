@@ -14,10 +14,13 @@
 		<link href="{{ asset('../pavicon.png') }}" rel='shortcut icon' type="image/png">
 
 		<!-- Inclunde CSS bootstrap-->
-		<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
+		<link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+
+		<!-- Inclunde CSS bootstrap on Web-->
+		{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" > --}}
 
 		<!-- Include CSS font-awesome -->
-		<link href="{{asset('css/font-awesome.css')}}" rel="stylesheet">
+		<link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
 
 		<!-- Include CSS custom dari halaman -->
 		@yield('style')

@@ -22,6 +22,10 @@ Route::group(['middleware' => 'web'], function(){
 
     Route::post('pengajuan-form',['uses' => 'controllerPengajuan@simpan','as' => 'pengajuan-simpan']);
 
+    Route::get('unduhExcel/{ext}', 'controllerPengajuan@unduhExcel');
+
+    Route::post('unggahExcel', 'controllerPengajuan@unggahExcel');
+
     Route::get('profil/{id}',[ 'uses' => 'controllerPengajuan@profil', 'as' => 'profil']);
 
     Route::get('profil-keluar','controllerProfilKeluar@index');

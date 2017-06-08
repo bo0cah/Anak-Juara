@@ -14,7 +14,7 @@
 			width: 100%;
 			/* Set the fixed height of the footer here */
 			height: 60px;
-			background-color: #f05020;
+			background-color: #e24713;
 		}
 /* Custom page CSS
 -------------------------------------------------- */
