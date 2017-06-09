@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 // use App\Http\Requests;
+use App\Pengajuan as Pengajuan;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Http\UploadedFile;
-use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\DB;
-use App\Pengajuan as Pengajuan;
-use Carbon\Carbon;
+use Illuminate\Support\Facades\Input;
 use Maatwebsite\Excel\Facades\Excel;
 
 class controllerPengajuan extends Controller
@@ -93,59 +93,65 @@ class controllerPengajuan extends Controller
     public function unggahExcel(Request $request)
     {
         
-        $file = $request->file('import_file');
-        if($file)
-        {
-            $path = $file->getRealPath();
-            $data = Excel::load($path, function($reader){ // reader methods callback is optional
-            })->get();
+        // $file = $request->file('import_file');
+        // if(!empty($file))
+        // {
+        //     $path = $file->getRealPath();
+        //     $data = Excel::load($path, function($reader){ // reader methods callback is optional
+        //     })->get();
 
-            if(!empty($data) && $data->count()){
-                foreach ($data as $key => $value) {
-                    $insert[] = [
-                        'NIK' => $value->NIK,
-                        'nama' => $value->nama,
-                        'kelamin' => $value->kelamin,
-                        'tempat_lahir' => $value->tempat_lahir,
-                        'Tgl_Lahir' => $value->Tgl_Lahir,
-                        'Anak_Ke' => $value->Anak_Ke,
-                        'Jlh_Sdr' => $value->Jlh_Sdr,
-                        'Alamat_Anak' => $value->Alamat_Anak,
-                        'RT_Anak' => $value->RT_Anak,
-                        'RW_Anak' => $value->RW_Anak,
-                        'Desa_Anak' => $value->Desa_Anak,
-                        'Kec_Anak' => $value->Kec_Anak,
-                        'Deskripsi_Diri' => $value->Deskripsi_Diri,
-                        'HP_Telp' => $value->HP_Telp,
-                        'Photo' => $value->Photo,
-                        'Wilayah_Pembinaan' => $value->Wilayah_Pembinaan,
-                        'Jenjang_Pendidikan' => $value->Jenjang_Pendidikan,
-                        'Kelas_Smt' => $value->Kelas_Smt,
-                        'Nilai_IPK' => $value->Nilai_IPK,
-                        'Nama_Sklh_Kampus' => $value->Nama_Sklh_Kampus,
-                        'Alamat_Sekolah' => $value->Alamat_Sekolah,
-                        'Keberadaan_Ortu' => $value->Keberadaan_Ortu,
-                        'Nama_Ayah' => $value->Nama_Ayah,
-                        'Pend_Ayah' => $value->Pend_Ayah,
-                        'Alamat_Ayah' => $value->Alamat_Ayah,
-                        'Nama_Ibu' => $value->Nama_Ibu,
-                        'Pend_Ibu' => $value->Pend_Ibu,
-                        'Alamat_Ibu' => $value->Alamat_Ibu,
-                        'Nama_Wali' => $value->Nama_Wali,
-                        'Pend_Wali' => $value->Pend_Wali,
-                        'Alamat_Wali' => $value->Alamat_Wali,
-                        'penghasilan' => $value->penghasilan,
-                        'stts_tinggal' => $value->stts_tinggal
-                    ];
-                }
-                // if(!empty($insert)){
-                //     DB::table('pengajuan')->insert($insert);
-                //     dd('Insert Record successfully.');
-                // }
-            }
-            Pengajuan::create($data);
-        }
-        return back();
+        //     if(!empty($data) && $data->count()){
+        //         foreach ($data as $key => $value) {
+        //             $insert[] = [
+        //                 'NIK' => $value->NIK,
+        //                 'nama' => $value->nama,
+        //                 'kelamin' => $value->kelamin,
+        //                 'tempat_lahir' => $value->tempat_lahir,
+        //                 'Tgl_Lahir' => $value->Tgl_Lahir,
+        //                 'Anak_Ke' => $value->Anak_Ke,
+        //                 'Jlh_Sdr' => $value->Jlh_Sdr,
+        //                 'Alamat_Anak' => $value->Alamat_Anak,
+        //                 'RT_Anak' => $value->RT_Anak,
+        //                 'RW_Anak' => $value->RW_Anak,
+        //                 'Desa_Anak' => $value->Desa_Anak,
+        //                 'Kec_Anak' => $value->Kec_Anak,
+        //                 'Deskripsi_Diri' => $value->Deskripsi_Diri,
+        //                 'HP_Telp' => $value->HP_Telp,
+        //                 'Photo' => $value->Photo,
+        //                 'Wilayah_Pembinaan' => $value->Wilayah_Pembinaan,
+        //                 'Jenjang_Pendidikan' => $value->Jenjang_Pendidikan,
+        //                 'Kelas_Smt' => $value->Kelas_Smt,
+        //                 'Nilai_IPK' => $value->Nilai_IPK,
+        //                 'Nama_Sklh_Kampus' => $value->Nama_Sklh_Kampus,
+        //                 'Alamat_Sekolah' => $value->Alamat_Sekolah,
+        //                 'Keberadaan_Ortu' => $value->Keberadaan_Ortu,
+        //                 'Nama_Ayah' => $value->Nama_Ayah,
+        //                 'Pend_Ayah' => $value->Pend_Ayah,
+        //                 'Alamat_Ayah' => $value->Alamat_Ayah,
+        //                 'Nama_Ibu' => $value->Nama_Ibu,
+        //                 'Pend_Ibu' => $value->Pend_Ibu,
+        //                 'Alamat_Ibu' => $value->Alamat_Ibu,
+        //                 'Nama_Wali' => $value->Nama_Wali,
+        //                 'Pend_Wali' => $value->Pend_Wali,
+        //                 'Alamat_Wali' => $value->Alamat_Wali,
+        //                 'penghasilan' => $value->penghasilan,
+        //                 'stts_tinggal' => $value->stts_tinggal
+        //             ];
+        //         }
+        //         // if(!empty($insert)){
+        //         //     DB::table('pengajuan')->insert($insert);
+        //         //     dd('Insert Record successfully.');
+        //         // }
+        //     }
+        //     Pengajuan::create($data);
+        // }
+
+        $date = Carbon::now();
+        $dateFormat = Carbon::createFromFormat('dd-mm-YYYY', '1990-07-09')->toDateTimeString();
+
+        return $date.'<br>'.$dateFormat;
+
+        // return dd($data);
     }
 
 }
