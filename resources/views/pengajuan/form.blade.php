@@ -17,6 +17,10 @@
             <button class="btn btn-primary btn-sm">Unggah Excel</button>
          </div>
     </div>
+
+    @if(Session::has('message'))
+      {{Session::get('message')}}
+    @endif
   
   </form>
 
